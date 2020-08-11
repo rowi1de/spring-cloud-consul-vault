@@ -1,0 +1,16 @@
+spring.application.name: spring-boot
+spring:
+  cloud:
+    vault:
+      host: localhost
+      port: 8200
+      scheme: http
+      authentication: TOKEN
+      token: 1ee2e44c-4fff-c745-3507-f07ec3df332a
+    consul:
+      config:
+        enabled: true
+        name: ${spring.application.name}-${server.port}
+      discovery:
+        scheme: http
+        serviceName: ${spring.application.name}-${server.port}
