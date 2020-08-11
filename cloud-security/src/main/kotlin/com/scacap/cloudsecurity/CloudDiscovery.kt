@@ -5,7 +5,6 @@ import org.springframework.cloud.context.config.annotation.RefreshScope
 import org.springframework.stereotype.Service
 import reactor.core.publisher.Flux
 
-
 @Service
 @RefreshScope
 internal class CloudDiscovery(private val discoveryClient: DiscoveryClient) {
