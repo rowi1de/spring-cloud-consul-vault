@@ -1,0 +1,8 @@
+Application Name:       ${spring.application.name}
+Server Port:            ${server.port}
+
+Consul:                 ${spring.cloud.consul.host:localhost}:${spring.cloud.consul.port}
+Consul-Config-ID:       ${spring.cloud.consul.config.name}
+Consul-Discovery-ID:    ${spring.cloud.consul.discovery.serviceName}
+
+Vault:                  ${spring.cloud.vault.host:localhost}:${spring.cloud.vault.port}
