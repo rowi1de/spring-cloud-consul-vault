@@ -33,10 +33,6 @@ Based on [Einsteinish/Docker-compose-Hashicorp-Vault-Consul](https://github.com/
 - `/service` SSE Endpoint of all services + ui
 - `/secret` Shared Vault Secret
 
-#### Run via docker (cloud native build packs)
-- `/.gradlew bootBuildImage` to build
-- `docker-compose up -d && docker-compose ps`
-
 # Notes / TODOs
 - All services run in DEV Mode .. don't use in PROD
 
