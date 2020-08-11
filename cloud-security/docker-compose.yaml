@@ -5,21 +5,15 @@ services:
     image: docker.io/library/cloud-security:0.0.1-SNAPSHOT
     ports:
       - "8080:8080"
-      - "8501:8500"
-      - "8201:8200"
+    network_mode: "host"
     environment:
       SERVER_PORT: '8080'
-      SPRING_CLOUD_CONSUL_PORT: '8501'
-      SPRING_CLOUD_VAULT_PORT: '8201'
 
 
   spring-boot-8081:
     image: docker.io/library/cloud-security:0.0.1-SNAPSHOT
     ports:
       - "8081:8081"
-      - "8502:8500"
-      - "8202:8200"
+    network_mode: "host"
     environment:
       SERVER_PORT: '8081'
-      SPRING_CLOUD_CONSUL_PORT: '8502'
-      SPRING_CLOUD_VAULT_PORT: '8052'
