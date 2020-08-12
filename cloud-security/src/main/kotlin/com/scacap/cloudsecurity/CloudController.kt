@@ -17,7 +17,7 @@ internal class CloudController(
 ) {
     @GetMapping("hello", produces = [TEXT_EVENT_STREAM_VALUE])
     fun helloCloud(): Flux<String> =
-        Flux.interval(Duration.ofSeconds(5)).map { "${cloudProperties.hello} : ${LocalDateTime.now()}" }
+        Flux.interval(Duration.ZERO, Duration.ofSeconds(5)).map { "$it @ ${LocalDateTime.now()} : ${cloudProperties.hello}" }
 
     @GetMapping("events", produces = [TEXT_EVENT_STREAM_VALUE])
     fun events(): Flux<String> = remoteApplicationEventListener.events

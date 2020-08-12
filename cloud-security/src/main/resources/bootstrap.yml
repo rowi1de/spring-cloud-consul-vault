@@ -6,7 +6,7 @@ spring:
       port: 8200
       scheme: http
       authentication: TOKEN
-      token: 1ee2e44c-4fff-c745-3507-f07ec3df332a
+      token: 20d1aa4f-069a-a7e9-c979-6d426a27768f
     consul:
       config:
         enabled: true
