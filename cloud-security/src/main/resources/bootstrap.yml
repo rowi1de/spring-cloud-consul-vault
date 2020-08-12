@@ -7,6 +7,9 @@ spring:
       scheme: http
       authentication: TOKEN
       token: 20d1aa4f-069a-a7e9-c979-6d426a27768f
+      kv:
+        application-name: ${spring.application.name}
+        default-context: ${spring.application.name}
     consul:
       config:
         enabled: true

@@ -8,4 +8,6 @@ import org.springframework.cloud.context.config.annotation.RefreshScope
 class CloudSecret {
 
     lateinit var shared: String
+
+    lateinit var own: String
 }

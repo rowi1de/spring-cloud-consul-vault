@@ -25,6 +25,10 @@ internal class CloudController(
     @GetMapping("services", produces = [TEXT_EVENT_STREAM_VALUE])
     fun services(): Flux<String> = discovery.services
 
-    @GetMapping("secret")
-    fun secret() = cloudSecret.shared
+
+    @GetMapping("secret/shared")
+    fun `shared secret`() = cloudSecret.shared
+
+    @GetMapping("secret/own")
+    fun `own secret`() = cloudSecret.own
 }
