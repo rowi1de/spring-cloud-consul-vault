@@ -1,0 +1,37 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="spring-boot-app-2" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="cloud-security.main" />
+    <extension name="net.ashald.envfile">
+      <option name="IS_ENABLED" value="false" />
+      <option name="IS_SUBST" value="false" />
+      <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+      <option name="IS_IGNORE_MISSING_FILES" value="false" />
+      <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+      <ENTRIES>
+        <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+      </ENTRIES>
+    </extension>
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.scacap.cloudsecurity.CloudSecurityApplication" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <additionalParameters>
+      <param>
+        <option name="enabled" value="true" />
+        <option name="name" value="server.port" />
+        <option name="value" value="8081" />
+      </param>
+      <param>
+        <option name="enabled" value="true" />
+        <option name="name" value="spring.application.name" />
+        <option name="value" value="spring-boot" />
+      </param>
+      <param>
+        <option name="enabled" value="true" />
+        <option name="name" value="spring.cloud.vault.token" />
+        <option name="value" value="9b2e01d9-513f-4fa9-f1ad-07d310885821" />
+      </param>
+    </additionalParameters>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
