@@ -6,16 +6,17 @@ spring:
       port: 8200
       scheme: http
       authentication: TOKEN
-      token: 20d1aa4f-069a-a7e9-c979-6d426a27768f
       kv:
         application-name: ${spring.application.name}
-        default-context: ${spring.application.name}
     consul:
       config:
         enabled: true
         name: ${spring.application.name}-${server.port}
+        default-context: ${spring.application.name}
+        watch:
+          wait-time: 5
       discovery:
         scheme: http
-        serviceName: ${spring.application.name}-${server.port}
+        service-name: ${spring.application.name}-${server.port}
       port: 8500
       host: localhost

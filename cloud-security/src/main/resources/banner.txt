@@ -3,6 +3,6 @@ Server Port:            ${server.port}
 
 Consul:                 ${spring.cloud.consul.host:localhost}:${spring.cloud.consul.port}
 Consul-Config-ID:       ${spring.cloud.consul.config.name}
-Consul-Discovery-ID:    ${spring.cloud.consul.discovery.serviceName}
+Consul-Discovery-ID:    ${spring.cloud.consul.discovery.service-name}
 
 Vault:                  ${spring.cloud.vault.host:localhost}:${spring.cloud.vault.port}
