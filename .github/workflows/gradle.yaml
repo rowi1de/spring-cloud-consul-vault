@@ -24,8 +24,10 @@ jobs:
         cache: gradle
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
+      working-directory: ./cloud-security
     - name: Build with Gradle
       run: ./gradlew build
+      working-directory: ./cloud-security
 
   ktlint:
     name: Check Code Quality
